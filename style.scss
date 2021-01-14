@@ -14,4 +14,133 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   font-family: 'Poppins', sans-serif;
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: $primary-red;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text {
+  padding: 1.5rem 0;
+  max-width: 80%;
+}
+
+.free-trial {
+  background-color: $accent-blue;
+  padding: 2rem;
+  // width: 80%;
+  // margin: auto;
+  border-radius: 15px;
+  box-shadow: 3px 6px 6px $neutral-dark;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.right-container {
+  max-width: 35rem;
+  margin: 1.5rem;
+}
+
+.form {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 3px 6px 6px $neutral-dark;
+
+  &--field {
+    width: 90%;
+    height: 3rem;
+    margin: 0.75rem;
+    padding: 1rem;
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  // Error styling
+  // &--error {
+  //   display: none;
+  // }
+
+
+  &--error-text {
+    color: $primary-red;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    text-align: right;
+    margin-right: 5%;
+  }
+
+  &--error-img {
+    position: absolute;
+    right: 15%;
+    margin-top: 0.75rem;
+  }
+
+
+
+  &__button {
+    width: 90%;
+    margin-top: 0.5rem;
+    background-color: $primary-green;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__p {
+    color: $neutral-gray;
+    font-size: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  &--bold {
+    color: $primary-red;
+    font-weight: 700;
+  }
+}
+
+.form--input.error
+.form--error {
+  display: inline;
+}
+
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .main-text {
+    flex: 1;
+    max-width: 40rem;
+    text-align: left;
+    padding: 0 2rem;
+
+    &__heading {
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .right-container {
+    flex: 1;
+  }
 }
