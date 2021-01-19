@@ -87,21 +87,6 @@ body {
   font-weight: 500;
 }
 
-.form--error-text {
-  color: #ff7a7a;
-  font-size: 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  text-align: right;
-  margin-right: 5%;
-}
-
-.form--error-img {
-  position: absolute;
-  right: 15%;
-  margin-top: 0.75rem;
-}
-
 .form__button {
   width: 90%;
   margin-top: 0.5rem;
@@ -126,9 +111,29 @@ body {
   font-weight: 700;
 }
 
+.form--error {
+  display: none;
+}
+
+.form--error-text {
+  color: #ff7a7a;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+  margin-right: 5%;
+}
+
 .form--input.error
 .form--error {
-  display: inline;
+  display: block;
+}
+
+.form--input.error
+.form--field {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  border: 1px #ff7a7a solid;
 }
 
 @media (min-width: 800px) {
