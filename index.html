@@ -24,6 +24,7 @@
   </div> 
 
   <div class="right-container">
+    
     <div class="free-trial">
       <p class="free-trial__text">
         <span class="free-trial--bold">Try it free 7 days</span> then $20/mo. thereafter
@@ -33,33 +34,32 @@
     <form action="#" class="form">
 
       <div class="form--input" id="form__first-name">
-        <input type="text" placeholder="First Name" aria-label="first name" class="form--field" id="fist-name-input" required>
+        <input type="text" placeholder="First Name" aria-label="first name" class="form--field" required>
        
-          
-          <p class="form--error-text form--error">First Name cannot be empty</p>
+        <p class="form--error-text form--error">First Name cannot be empty</p>
         </div>
         
 
       <div class="form--input" id="form__last-name">
         <input type="text" placeholder="Last Name" aria-label="last name" class="form--field" required >
-        
-          
-          <p class="form--error form--error-text">Last Name cannot be empty</p>
+
+        <p class="form--error">Last Name cannot be empty</p>
         
       </div>
 
       <div class="form--input" id="form__email">
-        <input type="email" placeholder="Email Address" aria-label="email address" class="form--field" required >
+        <input type="email" placeholder="Email Address" aria-label="email address" class="form--field" id="email" required >
         
-        <p class="form--error form--error-text">Looks like this is not an email</p>
+        <p class="form--error">Looks like this is not an email</p>
       </div>
 
       <div class="form--input" id="form__password">
         <input type="password" placeholder="Password" aria-label="password" class="form--field" required>
-        
-        <p class="form--error form--error-text">Password cannot be empty</p>
+    
+        <p class="form--error">Password cannot be empty</p>
       </div>
     
+
       <button class="form__button">Claim your free trial </button>
     
       <p class="form__p">

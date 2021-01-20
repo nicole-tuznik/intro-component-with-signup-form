@@ -12,7 +12,8 @@ $neutral-gray: hsl(246, 25%, 77%);
 
 body {
   font-size: 1rem;
-  line-height: 1.4;
+  margin: 3rem 0;
+  line-height: 1.7;
   font-family: 'Poppins', sans-serif;
   background-image: url(/images/bg-intro-mobile.png);
   background-color: $primary-red;
@@ -27,12 +28,17 @@ body {
 .main-text {
   padding: 1.5rem 0;
   max-width: 80%;
+
+  &__heading {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
 }
 
 .free-trial {
   background-color: $accent-blue;
-  padding: 2rem;
-  border-radius: 15px;
+  padding: 1rem 3.5rem;
+  border-radius: 7px;
   box-shadow: 3px 6px 6px $neutral-dark;
 
   &--bold {
@@ -47,10 +53,9 @@ body {
 
 .form {
   background-color: #fff;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 2rem 1rem;
-  border-radius: 15px;
-  position: relative;
+  border-radius: 7px;
   box-shadow: 3px 6px 6px $neutral-dark;
 
   &--field {
@@ -58,10 +63,18 @@ body {
     height: 3rem;
     margin: 0.75rem;
     padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid $neutral-gray;
 
     &::placeholder {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $neutral-dark;
+      outline: none;
     }
   }
 
@@ -76,12 +89,19 @@ body {
     border-radius: 7px;
     border: none;
     cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 60%;
+    }
   }
 
   &__p {
     color: $neutral-gray;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding-top: 1rem;
+    margin: 0 1rem;
   }
 
   &--bold {
@@ -94,11 +114,9 @@ body {
   // Error styling
 .form--error {
   display: none;
-  }
-
-.form--error-text {
   color: $primary-red;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
+  font-style: italic;
   margin-bottom: 0.5rem;
   text-align: right;
   margin-right: 5%;
@@ -114,7 +132,16 @@ body {
   background-image: url(/images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 95% 50%;
-  border: 1px $primary-red solid;
+  border: 2px $primary-red solid;
+  
+  &::placeholder {
+    color: $primary-red;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
 }
 
 
@@ -123,6 +150,7 @@ body {
     background-image: url(/images/bg-intro-desktop.png);
     flex-direction: row;
     height: 100vh;
+    margin: 0;
   }
 
   .main-text {
@@ -133,7 +161,6 @@ body {
 
     &__heading {
       font-size: 3rem;
-      padding-bottom: 1.5rem;
     }
   }
 
