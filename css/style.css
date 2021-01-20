@@ -201,6 +201,9 @@ body {
   .main-text__heading {
     font-size: 3rem;
   }
+  .main-text__p {
+    padding-right: 2rem;
+  }
   .right-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
