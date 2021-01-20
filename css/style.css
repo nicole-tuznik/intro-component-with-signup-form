@@ -196,7 +196,7 @@ body {
             flex: 1;
     max-width: 40rem;
     text-align: left;
-    padding: 0 2rem;
+    padding-right: 2rem;
   }
   .main-text__heading {
     font-size: 3rem;

@@ -14,7 +14,7 @@ formBtn.addEventListener('click', function(e){
       currentInput.removeAttribute('placeholder');
       e.preventDefault();
     
-      // If input is invalid and it IS the email field, add error class and change placeholder value
+    // If input is invalid and it IS the email field, add error class and change placeholder value
     } else if ((!currentInput.validity.valid) && (currentInput.getAttribute('id') === 'email')) {
       inputParent.classList.add('error');
       currentInput.placeholder = `email@example.com`;
